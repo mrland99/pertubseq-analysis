@@ -50,4 +50,5 @@ popNormMatrix.columns = pop.gene_names(popNormMatrix.columns)
 popNormMatrix = popNormMatrix.dropna(axis=1)
 
 # EXAMPLE: cluster random subset of matrix and display heatmap with dendrogram
+# There are many things you can do, such as average by guide_targets before clustering (see uprExperimentAnalysis)
 clusterRandomSubset(popNormMatrix, 13000, 100)
